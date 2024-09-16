@@ -78,7 +78,6 @@ const requestsRoutes = require("./routes/requestsRoutes");
 const chatRoutes = require("./routes/chatsRoutes");
 const groupRoutes = require("./routes/groupRoutes");
 const communityRoutes = require("./routes/communityRoutes");
-const coinRoutes = require("./routes/coinRoutes")
 
 app.use("/auth", authRoutes);
 app.use("/user", userRoutes);
@@ -87,7 +86,6 @@ app.use("/friend-request", friendRequestsRoutes);
 app.use("/request", requestsRoutes);
 app.use("/groups", groupRoutes);
 app.use("/community", communityRoutes);
-app.use("/coin", coinRoutes)
 
 const io = new Server(server, {
   cors: {
